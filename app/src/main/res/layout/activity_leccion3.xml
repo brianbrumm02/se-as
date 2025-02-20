@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título de la lección -->
+    <TextView
+        android:id="@+id/lessonTitle"
+        android:text="Lección 3: "
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Video de la lección -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lessonTitle" />
+
+    <!-- Botón para avanzar a la siguiente lección -->
+    <Button
+        android:id="@+id/btnNext"
+        android:text="Siguiente Lección"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="goToNextLesson" />
+
+    <Button
+        android:id="@+id/regresarButtonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Regresar al Menú Principal" />
+
+    <Button
+        android:id="@+id/iniciarExamenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/regresarButtonn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Iniciar Examen" /><!-- Asegúrate de que el botón esté en la parte inferior -->
+
+</RelativeLayout>

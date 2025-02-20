@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:ignore="ExtraText">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:indeterminate="false"
+        android:max="5"
+        android:progress="0"
+        android:scaleY="1.2" />  <!-- Escala el alto en un 20% -->
+
+    <!-- Título del examen -->
+    <TextView
+        android:id="@+id/examTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Examen de Vocales"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Imagen de la vocal -->
+    <ImageView
+        android:id="@+id/imageViewVocal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/examTitle"
+        android:layout_centerInParent="true"
+        android:src="@drawable/vocal_a" />
+
+    <!-- Opciones de respuesta -->
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewVocal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioOptionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioOptionE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioOptionI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioOptionO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioOptionU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <!-- Botón para enviar la respuesta -->
+    <Button
+        android:id="@+id/btnSubmitAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupOptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="submitAnswer"
+        android:text="Enviar Respuesta" />
+
+</RelativeLayout>

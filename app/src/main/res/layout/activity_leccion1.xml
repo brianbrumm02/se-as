@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#03A9F4">
+
+    <!-- Título de la lección -->
+    <TextView
+        android:id="@+id/lessonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Lección 1: "
+        android:textSize="24sp" />
+
+    <!-- Video de la lección -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lessonTitle" />
+
+    <!-- Botón para avanzar a la siguiente lección -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:drawableTint="#FFFFFF"
+        android:onClick="goToNextLesson"
+        android:text="Siguiente Lección" />
+
+</RelativeLayout>

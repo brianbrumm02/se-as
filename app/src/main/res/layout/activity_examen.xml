@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F0F4F8">
+
+    <!-- Título del examen -->
+    <TextView
+        android:id="@+id/examenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mini Examen"
+        android:textSize="24sp"
+        android:textColor="#0288D1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <!-- Pregunta -->
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué es la lengua de señas?"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Respuestas -->
+    <Button
+        android:id="@+id/respuesta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Un lenguaje hablado"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/respuesta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Un lenguaje de signos"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/respuesta3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Un sistema de escritura"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/respuesta4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Un lenguaje musical"
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Botón para enviar respuestas -->
+    <Button
+        android:id="@+id/botonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Respuesta"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#0288D1"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/regresarButtonn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Regresar al Menú Principal" />
+</LinearLayout>

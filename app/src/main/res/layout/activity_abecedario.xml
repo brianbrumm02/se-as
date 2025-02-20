@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3">
+
+    <!-- Barra de progreso -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:indeterminate="false"
+        android:max="5"
+        android:progress="0"
+        android:scaleY="1.2" />  <!-- Escala el alto en un 20% -->
+
+
+    <!-- Título de la lección -->
+    <TextView
+        android:id="@+id/lessonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Lección de Vocales"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Imagen de la vocal -->
+    <ImageView
+        android:id="@+id/imageViewVocal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/lessonTitle"
+        android:layout_centerInParent="true"
+        android:src="@drawable/vocal_a" /> <!-- Cambiar imagen por cada vocal -->
+
+    <!-- Nombre de la vocal -->
+    <TextView
+        android:id="@+id/textViewVocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewVocal"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="A"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Botón para pasar a la siguiente vocal -->
+    <Button
+        android:id="@+id/btnNextVocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVocal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8F98CC"
+        android:onClick="nextVocal"
+        android:text="Siguiente" />
+</RelativeLayout>

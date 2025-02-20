@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Barra superior con el texto "Lenguaje de Señas Mexicanas" -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="#B88F17"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Lenguaje de Señas Mexicanas"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Botón para iniciar lecciones -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="564dp"
+        android:backgroundTint="#01000000"
+        android:foreground="@drawable/video"
+        android:onClick="startLessons"
+        android:text="Iniciar Lecciones"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="537dp"
+        android:fontFamily="sans-serif"
+        android:text="Videoleccion"
+        android:textAllCaps="false"
+        android:textColor="#161515"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnabc"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="431dp"
+        android:backgroundTint="#002196F3"
+        android:foreground="@drawable/abc"
+        android:text="ABC" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="399dp"
+        android:fontFamily="sans-serif"
+        android:text="ABC"
+        android:textColor="#181818"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnsemanas"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="135dp"
+        android:background="#0000BCD4"
+        android:foreground="@drawable/colores"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="95dp"
+        android:fontFamily="sans-serif"
+        android:text="colores"
+        android:textColor="#0D0C0C"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btndias"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="277dp"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/diasdelasemana"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btnnumeros"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="279dp"
+        android:backgroundTint="#002196F3"
+        android:foreground="@drawable/numeros"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btnvocales"
+        android:layout_width="127dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="561dp"
+        android:backgroundTint="#002196F3"
+        android:foreground="@drawable/vocales"
+        android:text="Button"
+        android:onClick="goToAbecedarioActivity" /> <!-- Aquí se especifica la función onClick -->
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="240dp"
+        android:fontFamily="sans-serif"
+        android:text="Dias de la semana"
+        android:textColor="#101010"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/voc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="536dp"
+        android:fontFamily="sans-serif"
+        android:text="Vocales"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="243dp"
+        android:fontFamily="sans-serif"
+        android:text="Numeros"
+        android:textColor="#040404"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#B78E17"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brian_RicardoPerez_Brum"
+            android:textColor="#151614"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
